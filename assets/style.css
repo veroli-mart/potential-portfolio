@@ -14,16 +14,29 @@ main {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
+.hero {
+  background-image: url(../Images/portfolio.jpg);
+  background-size: cover;
+  height: 400px;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-position: left center;
+}
+.hero h2 {
+  color: #6d6875
+}
 .main-content-container {
-  max-width: 88%;
-  margin-left: auto;
+  max-width: 25%;
   margin-right: auto;
+  display: block;
+}
+.main-content-container p{
+  text-align: right;
 }
 header {
-  padding: 10px 5%;
-  display: flex;
-  background-image: url(../Images/portfolio.jpg);
+  padding: 0;
   background-size: cover;
   background-position: 10%;
   justify-content: flex-end;
@@ -37,7 +50,8 @@ header h1 {
 header a {
   color: white;
   text-decoration: none;
-  text-decoration-color: #6d6875 ;
+  text-decoration-color: #6d6875;
+  padding: 0;
 }
 header nav ul {
   list-style: none;
@@ -47,6 +61,33 @@ header nav ul li a{
   font-weight: 600;
   padding: 10px;
   text-decoration: underline;
+}
+header nav {
+  justify-content: flex-end;
+  background-color: #6D6875;
+}
+.nav-bar {
+  display: flex;
+  background-color: #6D6875;
+  justify-content: space-between;
+}
+.info-section a{
+  padding: 100%;
+}
+.container {
+
+}
+
+.name {
+  text-align: left;
+  align-content: flex-start;
+}
+.about-me{
+  font-size: 55px;
+}
+
+.name {
+  text-align: left;
 }
 
 h1 {
@@ -60,41 +101,32 @@ h1 {
 
 h2 {
   font-size: 24px;
-}
-
-.intro h2 {
-  font-size: 25px;
   color: #B5838D;
-  padding: 0 100px 20px 100px;
-  float: left;
-}
-
-.container a{ 
-  color: #d21034;
-}
-
-#main-bio {
-  width: 60%;
-  float: right;
 }
 
 .info-section {
-  align-items: stretch;
+  align-items: initial;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 25px 0;
-  padding: 10px 0;
+  padding: 25px 0;
+  border-right: 5px solid #B5838D;
 }
-/* .contact {
-  display: inline-block;
-} */
+.contact-info a{
+  justify-content: flex-end;
+  display: inline;
+
+}
+.contact-info h3 {
+  text-decoration: underline;
+}
 .info-section > h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
-  border: 4px solid black;
+  border: 4px solid none;
   font-size: 4vw;
   line-height: 1.1;
 }
