@@ -36,7 +36,9 @@ main {
   height: 300px;
   margin-left: 50px;
 }
-
+/* .container-title-1, .me{
+  text-align: center;
+} */
 .container-title-1, .container-title-3 {
   float: left;
   border-right: solid 5px;
@@ -175,26 +177,6 @@ h2 {
   display: flex;
 }
 
-/* .div1 img::after {
-  content: "";
-    height: 100%;
-    width: 100%;
-    background:rgba(214,109,117, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(214,109,117, 0.3),rgb(226, 149, 135 1)); 
-    opacity: 0;
-}
-.container-content:hover .div1 img::after {
-  opacity: 1;
-  transition: all 0.5s; 
-}
-/* .container-content:hover .div1 img {
-  z-index: 1;
-  transition: 0.6s;
-} */ */
-
 .parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -203,10 +185,8 @@ h2 {
     width: 400px;
     margin: 50px;
 }
-    
- 
 .div1 {
-  display: table-cell;
+  display: flex;
   background-color: #E5989B;
   color: whitesmoke;
   border: solid 2px #FFCDB2;
@@ -215,7 +195,7 @@ h2 {
 }
 
  .div2 {
-  display:table-cell;
+  display: flex;
   background-color: #E5989B;
   color: whitesmoke;
   border: solid 2px #FFCDB2;
@@ -224,7 +204,7 @@ h2 {
  }
 
 .div3 {
-  display:table-cell;
+  display: flex;
   background-color: #E5989B;
   color: whitesmoke;
   border: solid 2px #FFCDB2;
@@ -233,7 +213,7 @@ h2 {
 }
   
 .div4 {
-  display:table-cell;
+  display: flex;
   background-color: #E5989B;
   color: whitesmoke;
   border: solid 2px #FFCDB2;
@@ -243,7 +223,7 @@ h2 {
 
 
 .div5 {
-  display:table-cell;
+  display: flex;
   background-color: #E5989B;
   color: whitesmoke;
   border: solid 2px #FFCDB2;
