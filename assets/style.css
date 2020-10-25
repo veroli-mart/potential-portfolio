@@ -10,6 +10,9 @@ body {
   background: whitesmoke;
 }
 
+header {
+  position: sticky;
+}
 main {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -25,7 +28,9 @@ main {
   background-position: left center;
 }
 .hero h2 {
-  color: #6d6875
+  background-color: #6d6875;
+  color: whitesmoke;
+  padding: 20px;
 }
 .container {
   display: flex;
@@ -35,15 +40,12 @@ main {
   margin-left: 50px;
 }
 
-.container-item {
-  flex: 1;
-}
 .container-title-1, .container-title-3 {
   float: left;
   border-right: solid 5px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #B5838D
+  color: #B5838D;
 }
 .container-title-2 {
   float: left;
@@ -51,12 +53,25 @@ main {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #B5838D
+  color: #B5838D;
 }
 
 .container-content {
-  padding: 20px;
   margin-left: 20px;
+}
+.container-content2 {
+  align-items: flex-end;
+}
+
+.container-content a{
+  justify-content: flex-end;
+  display: inline block;
+}
+.container-content h3 {
+  text-decoration: underline;
+}
+.container-items {
+  align-items: center;
 }
 header {
   padding: 0;
@@ -67,6 +82,7 @@ header {
 #about-me {
   padding: 30px;
 }
+
 
 #work {
   padding: 35px;
@@ -140,13 +156,7 @@ h2 {
   padding: 25px 0;
   border-right: 5px solid #B5838D;
 }
-.container-content a{
-  justify-content: flex-end;
-  display: inline block;
-}
-.container-content h3 {
-  text-decoration: underline;
-}
+
 .info-section > h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -159,37 +169,63 @@ h2 {
   flex: 0 0 77%;
 }
 
+.flex-grid {
+  display: flex;
+}
+
+  
 .parent {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  height: 400px;
-  width: 400px;
-  margin: 50px;
-  }
-  
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 400px;
+    width: 400px;
+    margin: 50px;
+}
+    
 .div1 img{ 
   width: 100%;
   border: solid 2px #FFCDB2;
   grid-area: 1 / 1 / 9 / 9; 
 }
+.div1 {
+  background-color: #E5989B;
+  color: whitesmoke;
+}
+
 .div2 img{ 
   width: 100%;
   border: solid 2px #FFCDB2;
   grid-area: 1 / 9 / 5 / 13;
+ }
+ .div2 {
+  background-color: #E5989B;
+  color: whitesmoke;
  }
 .div3 img{ 
   width: 100%;
   border: solid 2px #FFCDB2;
   grid-area: 5 / 9 / 9 / 13; 
 }
+.div3 {
+  background-color: #E5989B;
+  color: whitesmoke;
+}
 .div4 img{ 
   width: 100%;
   border: solid 2px #FFCDB2;
   grid-area: 9 / 1 / 13 / 5; }
+.div4 {
+  background-color: #E5989B;
+  color: whitesmoke;
+}
 .div5 img{ 
   width: 100%;
   border: solid 2px #FFCDB2;
   grid-area: 9 / 5 / 13 / 9; }
+.div5 {
+  background-color: #E5989B;
+  color: whitesmoke;
+}
