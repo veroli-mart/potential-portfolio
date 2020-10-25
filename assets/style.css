@@ -10,9 +10,6 @@ body {
   background: whitesmoke;
 }
 
-header {
-  position: sticky;
-}
 main {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -56,16 +53,17 @@ main {
   color: #B5838D;
 }
 
+
 .container-content {
   margin-left: 20px;
 }
 .container-content2 {
   align-items: flex-end;
+  color: black
 }
 
-.container-content a{
-  justify-content: flex-end;
-  display: inline block;
+.container-content2 h3 a {
+  display: inline-block;
 }
 .container-content h3 {
   text-decoration: underline;
@@ -73,6 +71,7 @@ main {
 .container-items {
   align-items: center;
 }
+
 header {
   padding: 0;
   background-size: cover;
@@ -81,15 +80,18 @@ header {
 }
 #about-me {
   padding: 30px;
+  font-size: 30px;
 }
 
 
 #work {
   padding: 35px;
+  font-size: 30px;
 }
 
 #contact-me {
   padding: 17px;
+  font-size: 30px;
 }
 
 header h1, nav, ul, li {
@@ -173,59 +175,78 @@ h2 {
   display: flex;
 }
 
-  
+.div1 img::after {
+  content: "";
+    height: 100%;
+    width: 100%;
+    background:rgba(214,109,117, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(214,109,117, 0.3),rgb(226, 149, 135 1)); 
+    opacity: 0;
+}
+.container-content:hover .div1 img::after {
+  opacity: 1;
+  transition: all 0.5s; 
+}
+/* .container-content:hover .div1 img {
+  z-index: 1;
+  transition: 0.6s;
+} */
+
 .parent {
-  display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     height: 400px;
     width: 400px;
     margin: 50px;
 }
     
-.div1 img{ 
-  width: 100%;
+ 
+.div1 {
+  display: table-cell;
+  background-color: #E5989B;
+  color: whitesmoke;
   border: solid 2px #FFCDB2;
   grid-area: 1 / 1 / 9 / 9; 
-}
-.div1 {
-  background-color: #E5989B;
-  color: whitesmoke;
+  column-gap: 5px;
 }
 
-.div2 img{ 
-  width: 100%;
-  border: solid 2px #FFCDB2;
-  grid-area: 1 / 9 / 5 / 13;
- }
  .div2 {
+  display:table-cell;
   background-color: #E5989B;
   color: whitesmoke;
+  border: solid 2px #FFCDB2;
+  grid-area: 1 / 9 / 5 / 12;
+  column-gap: 5px;
  }
-.div3 img{ 
-  width: 100%;
+
+.div3 {
+  display:table-cell;
+  background-color: #E5989B;
+  color: whitesmoke;
   border: solid 2px #FFCDB2;
   grid-area: 5 / 9 / 9 / 13; 
+  column-gap: 5px;
 }
-.div3 {
-  background-color: #E5989B;
-  color: whitesmoke;
-}
-.div4 img{ 
-  width: 100%;
-  border: solid 2px #FFCDB2;
-  grid-area: 9 / 1 / 13 / 5; }
+  
 .div4 {
+  display:table-cell;
   background-color: #E5989B;
   color: whitesmoke;
-}
-.div5 img{ 
-  width: 100%;
   border: solid 2px #FFCDB2;
-  grid-area: 9 / 5 / 13 / 9; }
+  grid-area: 9 / 1 / 13 / 5;
+  column-gap: 5px;
+ }
+
+
 .div5 {
+  display:table-cell;
   background-color: #E5989B;
   color: whitesmoke;
+  border: solid 2px #FFCDB2;
+  grid-area: 9 / 5 / 13/ 9; 
+  column-gap: 5px;
 }
