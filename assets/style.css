@@ -175,7 +175,7 @@ h2 {
   display: flex;
 }
 
-.div1 img::after {
+/* .div1 img::after {
   content: "";
     height: 100%;
     width: 100%;
@@ -193,7 +193,7 @@ h2 {
 /* .container-content:hover .div1 img {
   z-index: 1;
   transition: 0.6s;
-} */
+} */ */
 
 .parent {
     display: grid;
