@@ -30,7 +30,7 @@ main {
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: 300px;
   margin-left: 50px;
 }
@@ -171,11 +171,28 @@ h2 {
   height: 400px;
   width: 400px;
   margin: 50px;
-  overflow-wrap: normal;
   }
   
-.parent .div1 img{ grid-area: 1 / 1 / 9 / 9; }
-.parent .div2 img{ grid-area: 1 / 9 / 5 / 13; }
-.parent .div3 img{ grid-area: 5 / 9 / 9 / 13; }
-.parent .div4 img{ grid-area: 9 / 1 / 13 / 5; }
-.parent .div5 img{ grid-area: 9 / 5 / 13 / 9; }
+.div1 img{ 
+  width: 100%;
+  border: solid 2px #FFCDB2;
+  grid-area: 1 / 1 / 9 / 9; 
+}
+.div2 img{ 
+  width: 100%;
+  border: solid 2px #FFCDB2;
+  grid-area: 1 / 9 / 5 / 13;
+ }
+.div3 img{ 
+  width: 100%;
+  border: solid 2px #FFCDB2;
+  grid-area: 5 / 9 / 9 / 13; 
+}
+.div4 img{ 
+  width: 100%;
+  border: solid 2px #FFCDB2;
+  grid-area: 9 / 1 / 13 / 5; }
+.div5 img{ 
+  width: 100%;
+  border: solid 2px #FFCDB2;
+  grid-area: 9 / 5 / 13 / 9; }
